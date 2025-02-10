@@ -7,9 +7,26 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="">
-
+        <div class="header-container">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="text" id="unit-value" name="unit-value">
+            <button id="convert-btn">Convert</button>
+            <button id="switch-btn">dark-mode</button>
         </div>
-        <script></script>
+        <div class="groups-container">
+            <div class="unit-container">
+                <h2 class="unit-conversion-title">Length (Meter/Feet)</h2>
+                <p class="unit-conversion-text" id="unit-feet-el"></p>
+            </div>
+            <div class="unit-container">
+                <h2 class="unit-conversion-title">Volume (Liters/Gallons)</h2>
+                <p class="unit-conversion-text" id="unit-gallon-el"></p>
+            </div>
+            <div class="unit-container">
+                <h2 class="unit-conversion-title">Mass (Kilograms/Pounds)</h2>
+                <p class="unit-conversion-text" id="unit-pound-el"></p>
+            </div>
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
