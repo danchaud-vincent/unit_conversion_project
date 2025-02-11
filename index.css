@@ -37,6 +37,16 @@ body{
     text-align: center;
 }
 
+.header-container label{
+    position: absolute;
+    top: 145px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+    visibility: hidden;
+}
+
 #convert-btn{
     cursor: pointer;
     font-family: "Inter", serif;

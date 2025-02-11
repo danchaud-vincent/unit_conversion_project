@@ -13,13 +13,22 @@ const unitPoundEl = document.getElementById("unit-pound-el")
 convertBtn.addEventListener("click", function(){
 
     // get value from input
-    let inputValue = document.getElementById("unit-value").value
+    let inputUnitEl = document.getElementById("unit-value")
+    let inputUnitValue = inputUnitEl.value
 
-    if (inputValue){
+    // get label el
+    const inputLabelEl = document.querySelector("label")
 
-        const input_value_nb = Number(inputValue)
+    if (inputUnitValue){
+
+        const input_value_nb = Number(inputUnitValue)
 
         if (input_value_nb){
+
+            // change color input unit
+            inputUnitEl.style.borderColor = "white";
+            inputLabelEl.style.visibility = "hidden"
+
             // convert the value
             const meterToFeetValue = input_value_nb * 3.281
             const feetToMeterValue = input_value_nb / 3.281
@@ -38,7 +47,11 @@ convertBtn.addEventListener("click", function(){
             unitPoundEl.innerHTML = pound_sentence
         }
         else{
-            console.log("Please type a number")
+            
+            inputLabelEl.style.visibility = "visible"
+            
+            // change color input unit
+            inputUnitEl.style.borderColor = "red";
         } 
     } 
 })
