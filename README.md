@@ -1,7 +1,13 @@
-# UNIT CONVERSION PROJECT
+# GROCERIES FIREBASE APP
 
-Scrimba project from the Front end developer path course
+## SCRIMBA PROJECT
 
-## GOAL
+Project based on the The Frontend Developer Career Path.
+I developped a google chrome extension to convert units.
 
-Develop a google chrome extension which allow the user to convert units
+### TOOLS
+
+- HTML
+- CSS
+- JAVASCRIPT
+- chrome extension
